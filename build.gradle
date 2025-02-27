@@ -154,9 +154,10 @@ dependencies {
     implementation fg.deobf("maven.modrinth:spartan-weaponry-addon-toolkit:${spartan_weaponry_addon_toolkit_version}")
     implementation fg.deobf("maven.modrinth:caverns-and-chasms:${caverns_and_chasms_version}")
     implementation fg.deobf("maven.modrinth:blueprint:${blueprint_version}")
+    implementation fg.deobf("curse.maven:aquaculture-60028:${aquaculture_version}")
 
 
-    // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
+// Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
 
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")

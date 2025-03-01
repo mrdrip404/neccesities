@@ -13,7 +13,6 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Item.Properties;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -64,41 +63,6 @@ public abstract class Neccesities {
 
 
     // Creates a creative tab with the id "examplemod:example_tab" for the example item, that is placed after the combat tab
-    public class NecromiumTier implements Tier {
-        @Override
-        public int getUses() {
-            return 2500; // Trwałość broni
-        }
-        @Override
-        public float getSpeed() {
-            return 9.0F; // Prędkość kopania (nieistotne dla miecza)
-        }
-        @Override
-        public float getAttackDamageBonus() {
-            return 7.0F; // Bonus do obrażeń
-        }
-        @Override
-        public int getLevel() {
-            return 4; // Poziom narzędzia (np. 3 = diament, 4 = netherite)
-        }
-        @Override
-        public int getEnchantmentValue() {
-            return 20; // Łatwość zaklinania (np. żelazo: 14, diament: 10, złoto: 22)
-        }
-        @Override
-        public Ingredient getRepairIngredient() {
-            return Ingredient.of(new ItemStack(Items.NETHERITE_INGOT)); // Materiał do naprawy
-        }
-    }
-
-    public class NecromiumGreatsword extends SwordItem {
-        public NecromiumGreatsword() {
-            super(new NecromiumTier(), 7, -2.8F, new Properties());
-        }
-    }
-
-
-
 
 
     public Neccesities() {

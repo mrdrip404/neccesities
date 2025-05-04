@@ -150,11 +150,11 @@ dependencies {
     compileOnly(fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}:api"))
     // Use the full Curios API jar at runtime
     runtimeOnly(fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}"))
-    implementation fg.deobf("maven.modrinth:spartan-weaponry:${spartan_weaponry_version}")
-    implementation fg.deobf("maven.modrinth:spartan-weaponry-addon-toolkit:${spartan_weaponry_addon_toolkit_version}")
     implementation fg.deobf("maven.modrinth:caverns-and-chasms:${caverns_and_chasms_version}")
     implementation fg.deobf("maven.modrinth:blueprint:${blueprint_version}")
     implementation fg.deobf("curse.maven:aquaculture-60028:${aquaculture_version}")
+    implementation fg.deobf("curse.maven:dixtas-armory-844090:6484538}")
+    implementation fg.deobf("curse.maven:archery-expansion-1164945:6424928}")
 
 
 // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
